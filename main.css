@@ -1,0 +1,99 @@
+/* MAİN CSS */
+
+body{
+    padding: 0;
+    margin: 0;
+    font-family: "Delius", serif;
+}
+.page-wrapper{
+    display: grid;
+	grid-template: 
+	"header header"
+	"aside main"
+	"aside main-input";
+	grid-template-columns: 150px 1fr;
+	grid-template-rows: 50px 1fr 70px ;
+    width: 100vw;
+    height: 100vh;
+}
+
+.page-wrapper header{
+	grid-area: header;
+	background-color: #726c6c;
+    border: 2px solid #333;
+    text-align: center;
+    padding: 15px;
+    font-size: 20px;
+}
+
+.page-wrapper aside{
+    grid-area: aside;
+    background-color: #726c6c;
+    border: 2px solid #333;
+    border-bottom: none;
+    overflow: auto;
+
+}
+
+.page-wrapper .main{
+    grid-area: main;
+    background-color: rgb(241, 190, 241);
+}
+
+.page-wrapper .main-input{
+    grid-row: main-input;
+    background-color: wheat;
+}
+
+.ai-container {
+    padding: 0 0;
+    margin: 0;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    
+    text-align: center;
+}
+.input-area{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+input[type="text"]  {
+    width: 100%;
+    height: 48px;
+    padding: 10px 10px;
+    border: none;
+    font-size: 14px;
+    transition: border-color 0.3s ease;
+}
+
+input[type="text"]:focus {
+    border-color: #007bff;
+    outline: none;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+button {
+   
+    background-color: #007bff;
+    color: white;
+    border: none;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    height: 70px;
+    width: 10%;
+   
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+.response-area {
+    margin-top: 20px;
+    font-size: 16px;
+    color: #333;
+    word-wrap: break-word;
+}

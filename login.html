@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://fonts.googleapis.com/css2?family=Delius&family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/login.css">
+    <title>Sign in</title>
+</head>
+<body>
+    
+    <div class="login-container" id="login-container">
+    <div class="form-sign-in">
+        <form>
+            <h1>Welcome Back :)</h1>
+            <div class="sign-in">
+            <input type="email" placeholder="Email" required >
+            <input type="password" placeholder="Password"  required >
+            <a href="#">Forget Your Password?</a>
+            <a href="main.html"> <button type="submit">Sign In</button>  </a> 
+            </div>
+        </form>
+        <div class="sign-up">
+            <p>don't have an account?<button class="modal-trigger">Create Account</button></p>
+        </div>
+    </div>
+
+        <div class="atom">
+            <div class="line line-1"></div>
+            <div class="line line-2"></div>
+            <div class="line line-3"></div>
+    </div>
+
+   
+
+    <div class="modal-overlay">
+        <div class="modal">
+            <div class="modal-header">
+                <h2>Please New Account</h2>
+                <button class="close-button">&times;</button>
+            </div>
+            <form id="signup-form">
+                <div class="form-group">
+                    <label for="name">Full Name</label>
+                    <input type="text" id="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">E-mail</label>
+                    <input type="email" id="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="password">Password</label>
+                    <input type="password" id="password" required>
+                </div>
+                <div class="form-group">
+                    <label for="password-confirm">Password Again</label>
+                    <input type="password" id="password-confirm" required>
+                </div>
+                <button type="submit" class="submit-button">Sign Up</button>
+            </form>
+        </div>
+    </div>
+</div>
+
+
+<script src="/app.js"></script>
+</body>
+</html>
