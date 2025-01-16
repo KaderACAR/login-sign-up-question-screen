@@ -34,7 +34,7 @@ body{
     color: wheat;
    
 }
-.btn-sing-common{
+.btn-sign-common{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -46,7 +46,7 @@ body{
     font-family: "Delius", serif;
 }
 
-.btn-sing-common:hover{
+.btn-sign-common:hover{
     border: 2px solid rgb(182, 121, 182);
 }
 .button-container a{

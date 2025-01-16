@@ -10,17 +10,20 @@
 </head>
 <body>
     
-    <div class="login-container" id="login-container">
-    <div class="form-sign-in">
-        <form>
+    <div class="login-container" >
+    <div class="form-sign-in" >
+        <form id="loginContainer">
             <h1>Welcome Back :)</h1>
             <div class="sign-in">
-            <input type="email" placeholder="Email" required >
-            <input type="password" placeholder="Password"  required >
+            <input type="email" placeholder="enter your email" id="email" required >
+            <input type="password" placeholder="enter your password" id="password" required >
             <a href="#">Forget Your Password?</a>
-            <a href="main.html"> <button type="submit">Sign In</button>  </a> 
+           <button type="submit">Sign In</button>
+           <p id="message" style="color: red;"></p>
             </div>
+            
         </form>
+        
         <div class="sign-up">
             <p>don't have an account?<button class="modal-trigger">Create Account</button></p>
         </div>
